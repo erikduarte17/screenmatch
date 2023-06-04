@@ -39,7 +39,7 @@ public class ComunicacaoHTTP {
 				break;
 			}
 
-			String endereco = "http://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=448552ce";
+			String endereco = "http://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "*************";
 			HttpClient client = HttpClient.newHttpClient();
 			HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
 
